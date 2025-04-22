@@ -5,9 +5,12 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 WORKDIR /usr/src/app
 
+# Install dependencies
 COPY package*.json ./
-RUN npm ci
+RUN npm install --production
 
+# Copy app source
 COPY . .
 
+# Start the bot
 CMD ["npm", "start"] 
