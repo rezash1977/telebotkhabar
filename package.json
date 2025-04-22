@@ -1,0 +1,14 @@
+{
+  "name": "telebotkhabar",
+  "version": "1.0.0",
+  "description": "Telegram news forwarding bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.0.0"
+  }
+} 
